@@ -18,18 +18,15 @@ public class Usuario{
 		}
 
 	public Usuario(String Nome, String Cpf, String Senha) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public static Object getSenha() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public static Object getCpf() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
+	public static Object getnomeQuarto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

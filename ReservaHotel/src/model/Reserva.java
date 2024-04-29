@@ -1,22 +1,23 @@
 package model;
 
 public class Reserva {
-	public int Id;
-	public int idQuarto;
-	public int idUsuario;
-	public int dataInicio;
-	public int dataFim;
-	public boolean status;
+	private int Id;
+	private int idQuarto;
+	private int idUsuario;
+	private int dataInicio;
+	private int dataFim;
+	private String status;
 	
-	public Reserva (int Id, int idQuarto, int idUsuario, int dataInicio, int dataFim, boolean status) {
+	public Reserva (int Id, int idQuarto, int idUsuario, int dataInicio, int dataFim, String status) {
 		this.Id = Id;
 		this.idQuarto = idQuarto;
 		this.idUsuario = idUsuario;
 		this.dataInicio = dataInicio;
 		this.dataFim = dataFim;
-		this.status = status;
+		this.status = "aberto";
 	}
 
+	// GET SET Id
 	public int getId() {
 		return Id;
 	}
@@ -25,6 +26,7 @@ public class Reserva {
 		this.Id = Id;
 	}
 	
+	// GET SET idQuarto
 	public int getidQuarto() {
 		return idQuarto;
 	}
@@ -33,6 +35,7 @@ public class Reserva {
 		this.idQuarto = idQuarto;
 	}
 	
+	// GET SET idUsuario
 	public int getidUsuario() {
 		return idUsuario;
 	}
@@ -41,19 +44,30 @@ public class Reserva {
 		this.idUsuario = idUsuario;
 	}
 	
+	// GET SET dataInicio
 	public int getdataInicio() {
 		return dataInicio;
+	}
+	
+	public void getdataInicio(int dataInicio) {
+		this.dataInicio = dataInicio;
+	}
+	
+	// GET SET dataFim
+	public int getdataFim() {
+		return dataFim;
 	}
 	
 	public void setdataFim(int dataFim) {
 		this.dataFim = dataFim;
 	}
 	
-	public boolean getstatus() {
+	// GET SET status
+	public String getstatus() {
 		return status;
 	}
 	
-	public void setstatus(boolean status) {
+	public void setstatus(String status) {
 		this.status = status;
 	}
 }

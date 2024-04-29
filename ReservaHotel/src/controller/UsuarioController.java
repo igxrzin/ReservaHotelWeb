@@ -48,9 +48,9 @@ public class UsuarioController  {
         return true;
     }
 
-	public Usuario autenticarUsuario(String cpf, String Senha) {
+	public Usuario autenticarUsuario(String cpf,String senha) {
 		
-		return Hotel.buscarUsuario(cpf, Senha);
+		return Hotel.buscarUsuario(cpf);
 	}
 
 

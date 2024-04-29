@@ -1,6 +1,7 @@
 package Api;
 
 import model.Hotel;
+import model.Usuario;
 import view.CadastroUsuario;
 import view.LoginView;
 
@@ -28,8 +29,9 @@ public class Main {
                 break;
              
             case 1: //Login
-            	LoginView loginview = new LoginView();{
-            	
+            	LoginView loginView = new LoginView(usuarioController);
+                Usuario usuarioLogado = loginView.exibir();
+                if (usuarioLogado != null) {
             	
             	}
   		

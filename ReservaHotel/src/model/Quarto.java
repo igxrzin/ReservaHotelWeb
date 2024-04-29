@@ -1,43 +1,22 @@
 package model;
 
 public class Quarto {
-	public int Id;
-	public String tipoQuarto;
-	public double Preco;
-	public String Disponibilidade;
+	private int Id;
+	private String tipoQuarto;
+	private String nomeQuarto;
+	private double Preco;
+	private String Disponibilidade;
 	
 	
-	public Quarto(int Id, String tipoQuarto, double Preco, String Disponibilidade ) {
-		this.Id = 0;
+	public Quarto(int Id, String tipoQuarto, double Preco, String Disponibilidade, String nomeQuarto) {
+		this.Id = Id;
 		this.tipoQuarto = tipoQuarto;
-		this.Preco = 0;
-		this.Disponibilidade = Disponibilidade;
+		this.nomeQuarto = nomeQuarto;
+		this.Preco = Preco;
+		this.Disponibilidade = "liberado" ;
 		}
 	
-	public String getDisponibilidade() {
-		return Disponibilidade;
-	}
-	
-	public void setDisponibilidade(String Disponibilidade) {
-		this.Disponibilidade = Disponibilidade;
-	}
-	
-	public String gettipoQuarto() {
-		return tipoQuarto;
-	}
-	
-	public void settipoQuarto(String tipoQuarto) {
-		this.tipoQuarto = tipoQuarto;
-	}
-	
-	public double Preco() {
-		return Preco;
-	}
-	
-	public void setPreco (double Preco) {
-		this.Preco = Preco;
-	}
-	
+	// GET SET Id
 	public int Id() {
 		return Id;
 	}
@@ -46,10 +25,41 @@ public class Quarto {
 		this.Id = Id;
 	}
 	
+	// GET SET tipoQuarto
+	public String gettipoQuarto() {
+		return tipoQuarto;
+	}
 	
+	public void settipoQuarto(String tipoQuarto) {
+		this.tipoQuarto = tipoQuarto;
+	}
+	
+	// GET SET nomeQuarto
+	public String getnomeQuarto() {
+		return nomeQuarto;
+	}
+		
+	public void setnomeQuarto(String nomeQuarto) {
+		this.nomeQuarto = nomeQuarto;
+	}
+	
+	// GET SET Disponibilidade
+	public String getDisponibilidade() {
+		return Disponibilidade;
+	}
+	
+	public void setDisponibilidade(String Disponibilidade) {
+		this.Disponibilidade = Disponibilidade;
+	}
+	
+	// GET SET Preco
+	public double Preco() {
+		return Preco;
+	}
+	
+	public void setPreco (double Preco) {
+		this.Preco = Preco;
+	}
 
-	
-	
-	
 	
 }
