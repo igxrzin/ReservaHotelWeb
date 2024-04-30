@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hotel {
+	
 	//LISTA,ADICIONAR USUARIOS
 	private static List<Usuario> usuarios = new ArrayList<>();
 

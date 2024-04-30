@@ -16,7 +16,7 @@ public class Main {
        		UsuarioController usuarioController = new UsuarioController(hotel);
         while (true) {
             Object[] options = {"Cadastrar", "Login", "Listar Usuários"};
-            int escolha = JOptionPane.showOptionDialog(null, "Bem-vindo ao Banco HOTEL! Escolha uma opção:", "HOTEL",
+            int escolha = JOptionPane.showOptionDialog(null, "Bem-vindo ao San Andreas HOTEL! Escolha uma opção:", "HOTEL",
                     JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
                     null, options, options[0]);
 
